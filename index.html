@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mira's Button</title>
+    <style>
+    
+    #full-container {
+      display: flex;
+      align-items: top;
+      padding: 10px;
+    }
+
+    #image-container {
+      margin-right: 10px;
+    }
+
+    #button-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    #container {
+        width: 300px;
+        padding: 10px;
+    }
+    
+    #veto {
+      padding: 10px;
+      width: 150px;
+      display: inline-block;
+      text-align: left;
+    }
+
+    #veto button {
+      display: block;
+      width: 100%;
+      margin-bottom: 5px;
+    }
+    
+    map area {
+      cursor: pointer;
+    }
+    
+    #pics img {
+        display: none;
+    }
+    
+  </style>
+</head>
+<body>
+    <!-- Your HTML content goes here -->
+    <div>
+        <div id="full-container">
+        <div id="image-container">
+          <img src="mirasbutton.jpg" width="400"
+        height="auto" usemap="#examplemap"/>
+        <map name="examplemap">
+          <area shape="rect" coords="46,248,211,389" onclick="press_button()" alt="Page1">
+        </map> 
+        </div>
+        <div id="veto"></div>
+        <div>
+            <h2 id="presses"></h2>
+            <div id="container"></div>
+        </div>
+        <div id="pics">
+            <img id="agi" width="300" src="agi.jpg"/>
+            <img id="thumbsup" width="300" src="satania_thumbsup.png"/>
+            <img id="pet" width="400" src="miraspet.jpg"/>
+            <img id="cry" width="400" src="satania_cry.jpg"/>
+            
+      </div>
+        
+        <div>
+        </div>
+    </div>
+    
+    <button onclick="restart_game()">reset</button>
+    <br/>
+    
+    <script src="script.js"></script>
+</body>
+</html>
