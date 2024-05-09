@@ -350,7 +350,7 @@ function exec_effects(effects)
     {
         times_pope_lightning += 1
         console.log("the pope will be struck by lightning", times_pope_lightning, "times at his next speech")
-        add_text(`the pope will be struck by lightning" ${times_pope_lightning} times at his next speech`, "pope")
+        add_text(`the pope will be struck by lightning ${times_pope_lightning} times at his next speech`, "pope")
     }
 
     if(effects.includes("become the opposite sex"))
