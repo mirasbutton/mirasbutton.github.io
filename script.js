@@ -119,6 +119,8 @@ function restart_game()
     own_moon = false
     google_press_release = false
     vetoing = false
+    dead = false
+    stung_by_scorpions = 0
     negated = 0
     presses = 0
     //negate 15%
