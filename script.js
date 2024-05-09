@@ -127,7 +127,7 @@ function restart_game()
     //veto 20%
     stung_by_scorpions = 0
     document.getElementById("container").innerHTML = ""
-    document.getElementById("presses").innerHTML = ""
+    document.getElementById("presses").innerHTML = "0 Presses"
     document.getElementById("veto").innerHTML = ""
 }
 
@@ -203,7 +203,7 @@ function press_button()
     }
     if(Math.random() <= 0.05)
     {
-        effects.push("the pope will get struck by lightning")
+        effects.push("the pope will get struck by lightning at his next speech")
     }
 
     if(Math.random() <= 0.35)
@@ -350,7 +350,7 @@ function exec_effects(effects)
     {
         times_pope_lightning += 1
         console.log("the pope will be struck by lightning", times_pope_lightning, "times at his next speech")
-    add_text(`the pope will be struck by lightning" ${times_pope_lightning} times at his next speech`, "pope")
+        add_text(`the pope will be struck by lightning" ${times_pope_lightning} times at his next speech`, "pope")
     }
 
     if(effects.includes("become the opposite sex"))
